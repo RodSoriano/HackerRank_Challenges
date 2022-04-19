@@ -8,3 +8,5 @@ function solveMeFirst($a,$b)
     }
 
 #https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true
+
+?>
