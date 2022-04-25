@@ -1,6 +1,6 @@
 <?php
 
-#hacer una escalera de # empezando con 1 hasta llegar a n
+#make a staircase of # starting from 1 until reaching n
 
 function staircase($n)
     {
