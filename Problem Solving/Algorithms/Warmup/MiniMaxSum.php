@@ -1,5 +1,5 @@
 <?php
-
+# not finished yet
 # giving a 5 position array, find
 # max sum using 4 elements of the array
 # min sum using 4 elements of the array
