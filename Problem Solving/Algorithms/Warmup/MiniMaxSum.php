@@ -12,35 +12,35 @@ function miniMaxSum($arr)
         $resultMin = 0;
         $resultMax = 0;
 
-    if($min != $max)
-        {
-        for($i = 0; $i < $end; $i++)
+        if($min != $max)
             {
+                for($i = 0; $i < $end; $i++)
+                    {
 
-                if($arr[$i] > $min)
+                        if($arr[$i] > $min)
+                            {
+                                $resultMax += $arr[$i];
+                            }
+
+                        if($arr[$i] < $max)
+                            {
+                                $resultMin += $arr[$i];
+                            }
+                    }
+
+                echo $resultMin . " " . $resultMax;
+
+            }
+         else
+            {
+                for($i = 1; $i < $end; $i++)
                     {
                         $resultMax += $arr[$i];
                     }
-
-                if($arr[$i] < $max)
-                    {
-                        $resultMin += $arr[$i];
-                    }
+                
+                $resultMin = $resultMax;
+                echo $resultMin . " " . $resultMax;
             }
-
-        echo $resultMin . " " . $resultMax;
-
-        }
-    else
-        {
-            for($i = 1; $i < $end; $i++)
-                {
-                    $resultMax += $arr[$i];
-                }
-            
-            $resultMin = $resultMax;
-            echo $resultMin . " " . $resultMax;
-        }
     }
 
 #https://www.hackerrank.com/challenges/mini-max-sum/problem?isFullScreen=true

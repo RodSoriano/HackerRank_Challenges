@@ -22,5 +22,4 @@ function compareTheTriplets($a , $b)
     }
 
 #https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true
-
 ?>

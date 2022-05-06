@@ -14,5 +14,4 @@ function staircase($n)
     }
 
 #https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true
-
 ?>

@@ -19,5 +19,4 @@ function birthdayCakeCandles($candles)
     }
 
 #https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=false
-
 ?>
