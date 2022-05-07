@@ -1,10 +1,10 @@
 <?php
 
-#Rotate a number to the left n times
+#Rotate a number to the left n times 
+#d = n times of movement
 
 function rotateLeft($d , $arr)
     {
-        $b = [];
         for ($i = 0; $i < $d; $i++)
             {
                 $arr[] = $arr[$i];
