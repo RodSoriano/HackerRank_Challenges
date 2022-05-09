@@ -16,18 +16,43 @@ $arr[5][0] = 0; $arr[5][1] = 0; $arr[5][2] = 1; $arr[5][3] = 2; $arr[5][4] = 4; 
 function hourglassSum($arr)
     {
         $arrLen     =   count($arr);
-        $sum        =   0;
-        $maxSum     =   0;
         $hourGlass  =   [];
+        $all        =   "";
+        $hourG1     =   [];
+        $hourG2     =   [];
 
         for ($i = 0; $i < $arrLen; $i++)
             {
                 for($j = 0;$j < $arrLen; $j++)
                     {
-                        if($arr[$i][$j] > 0)
+                        if($arr[$i][$j] > 0 || $arr[$i][$j] != null)
                             {
-                                $hourGlass = $arr[$i][$j];
+                                $hourGlass[] = $arr[$i][$j];
                             }
                     }
             }
+
+    #one option
+        // $all    = implode( "" , $hourGlass);
+        // $hourG1 = substr($all, 0, 6);
+        // $hourG2 = substr($all, 7, 13);
+
+        // $hourG1 = str_split($hourG1);
+        // $hourG2 = str_split($hourG2);
+
+        // $hourG1 = array_sum($hourG1);
+        // $hourG2 = array_sum($hourG2);
+
+        // if($hourG1 > $hourG2)
+        //     {
+        //         echo $hourG1;
+        //     }
+        // else
+        //     {
+        //         echo $hourG2;
+        //     }
     }
+
+
+#testing
+echo hourglassSum($arr). "\n";
