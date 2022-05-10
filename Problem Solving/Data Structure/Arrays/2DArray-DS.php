@@ -25,7 +25,7 @@ function hourglassSum($arr)
             {
                 for($j = 0;$j < $arrLen; $j++)
                     {
-                        if($arr[$i][$j] > 0 || $arr[$i][$j] != null)
+                        if($arr[$i][$j] > 0)
                             {
                                 $hourGlass[] = $arr[$i][$j];
                             }
@@ -45,14 +45,14 @@ function hourglassSum($arr)
 
         // if($hourG1 > $hourG2)
         //     {
-        //         echo $hourG1;
+        //         return $hourG1;
         //     }
         // else
         //     {
-        //         echo $hourG2;
+        //         return $hourG2;
         //     }
     }
 
 
 #testing
-echo hourglassSum($arr). "\n";
+// echo hourglassSum($arr). "\n";
