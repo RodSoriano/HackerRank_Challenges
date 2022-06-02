@@ -1,7 +1,6 @@
 <?php
 
-# only blow the tallest candle
-#candles = [4,4,1,3]
+# only select the tallest number
 
 function birthdayCakeCandles($candles)
     {
