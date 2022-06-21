@@ -13,44 +13,75 @@ $arr[3][0] = 0; $arr[3][1] = 0; $arr[3][2] = 2; $arr[3][3] = 4; $arr[3][4] = 4; 
 $arr[4][0] = 0; $arr[4][1] = 0; $arr[4][2] = 0; $arr[4][3] = 2; $arr[4][4] = 0; $arr[4][5] = 0;
 $arr[5][0] = 0; $arr[5][1] = 0; $arr[5][2] = 1; $arr[5][3] = 2; $arr[5][4] = 4; $arr[5][5] = 0;
 
+
+$length = count($arr);
+$i = 0;
+$j = 0;
+$hourLoop = 0;
+$currentHourglass = 0;
+$results = [];
+$result = 0;
+$done = false;
+
+while(!$done) //recordar cambiar done = true para que salga del ciclo
+    {
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function hourglassSum($arr)
     {
-        $arrLen     =   count($arr);
-        $hourGlass  =   [];
-        $all        =   "";
-        $hourG1     =   [];
-        $hourG2     =   [];
+        $arrLen = count($arr);
+        $i = 0;
+        $j = 0;
+        $loop = 0;
+        $currentHourglass = 0;
+        $results = [];
+        $result = 0;
 
-        for ($i = 0; $i < $arrLen; $i++)
-            {
-                for($j = 0;$j < $arrLen; $j++)
-                    {
-                        if($arr[$i][$j] > 0)
-                            {
-                                $hourGlass[] = $arr[$i][$j];
-                            }
-                    }
-            }
-
-    #one option
-        // $all    = implode( "" , $hourGlass);
-        // $hourG1 = substr($all, 0, 6);
-        // $hourG2 = substr($all, 7, 13);
-
-        // $hourG1 = str_split($hourG1);
-        // $hourG2 = str_split($hourG2);
-
-        // $hourG1 = array_sum($hourG1);
-        // $hourG2 = array_sum($hourG2);
-
-        // if($hourG1 > $hourG2)
-        //     {
-        //         return $hourG1;
-        //     }
-        // else
-        //     {
-        //         return $hourG2;
-        //     }
     }
 
 
