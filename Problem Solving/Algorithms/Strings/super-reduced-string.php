@@ -4,29 +4,24 @@
 #by doing a series of operations. In each operation, 
 #select a pair of adjacent letters that match, and delete them. 
 
-//still working on it
-
 function superReducedString($s) 
     {
         $strArray = str_split($s);
         $length = count($strArray);
         $result = "";
-        $current = "";
 
         for($i = 1; $i < $length; $i++)
-            {        
-                if($strArray[$i] == $strArray[$i - 1])
+            {
+                if(isset($strArray[$i]))
                     {
-                        unset($strArray[$i]);
-                        unset($strArray[$i - 1]);
-                        $i++;
+                        if($strArray[$i] == $strArray[$i - 1])
+                            {
+                                array_splice($strArray, $i, 1);
+                                array_splice($strArray, $i - 1, 1);
+                                $i = 0;
+                            }
                     }
-
-                $current = $strArray[$i];
             }
-        
-        print_r($strArray);
-        echo "\n";
 
         if(!$strArray)
             {
@@ -39,4 +34,5 @@ function superReducedString($s)
             }
     }
 
+#https://www.hackerrank.com/challenges/reduced-string/problem?isFullScreen=true
 ?>
