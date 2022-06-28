@@ -3,7 +3,7 @@
 #Note: You can modify at most three lines in the given code and you cannot add or remove lines to the code.
 
 # Original code
-def strings_xor1(s, t): #here I added a "1" so it would not give error on de IDE for naming a function with the same name twice
+def strings_xor(s, t):
     res = "";
     for i in range(len(s)):
         if s[i] = t[i]:
@@ -15,9 +15,9 @@ def strings_xor1(s, t): #here I added a "1" so it would not give error on de IDE
 
 s = input()
 t = input()
-print(strings_xor1(s, t))
+print(strings_xor(s, t))
 
-# Debug code
+# Debugged code
 
 def strings_xor(s, t):
     res = ""
