@@ -2,6 +2,10 @@
 
 #The median of a list of numbers is essentially its middle element after sorting.
 
+#excecution time error, too slow 
+#seems like bubble sorting is to slow for hacker ranks tests, 
+#still working on it
+
 function findMedian($arr) {
     $length = count($arr);
     $swapped = false;
